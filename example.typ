@@ -9,7 +9,7 @@
     (name: "website", link: configuration.contacts.website.url, display: configuration.contacts.website.displayText),
     (name: "github", link: configuration.contacts.github.url, display: configuration.contacts.github.displayText),
     (name: "linkedin", link: configuration.contacts.linkedin.url, display: configuration.contacts.linkedin.displayText),
-    (name: "location", link: "", display: configuration.contacts.address)
+    (name: "location", display: configuration.contacts.address)
   ),
   tagline: (configuration.tagline),
   [

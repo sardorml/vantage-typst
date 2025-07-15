@@ -17,10 +17,14 @@
   services.map(service => {
       icon(service.name)
 
-      if "display" in service.keys() {
-        link(service.link)[#{service.display}]
+      if "link" in service.keys() {
+        if "display" in service.keys() {
+          link(service.link)[#{service.display}]
+        } else {
+          link(service.link)
+        }
       } else {
-        link(service.link)
+        service.display
       }
     }).join(h(10pt))
   [
